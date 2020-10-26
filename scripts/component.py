@@ -48,7 +48,7 @@ os.write(js_file, str.encode(js_file_str))
 os.close(js_file)
 
 scss_file= os.open(path+'/style.scss', os.O_CREAT|os.O_RDWR)
-scss_file_str = f'@import \'common_styles/_variables\'\n\n.{args.name} {{\n\t\n}}\n'
+scss_file_str = f'@import \'common_styles/_variables\';\n\n.{args.name} {{\n\t\n}}\n'
 os.write(scss_file, str.encode(scss_file_str))
 os.close(scss_file)
 
