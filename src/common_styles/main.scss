@@ -54,6 +54,11 @@ table {
 }
 
 /* MAIN STYLES */
+
+html, body, #root, #root>div {
+	height: 100%
+}
+
 html {
     font-size: 62.5%;
 }

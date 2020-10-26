@@ -16,7 +16,7 @@ function TextInput({label, placeholder, initialValue, hider, size, errorText}) {
 		<div className='TextInput'>
 			<label className="TextInput__label">
 				{label}
-				<input className={"TextInput__input " + (errorText ? "TextInput__input--error": "")} type={hidden ? "password" : "text"} value={value} onChange={onChange} placeholder={placeholder} size={size || 12} autoComplete></input>
+				<input className={"TextInput__input " + (errorText ? "TextInput__input--error": "")} type={hidden ? "password" : "text"} value={value} onChange={onChange} placeholder={placeholder} size={size || 12}></input>
 			</label>
 			{hider && <FontAwesomeIcon className='TextInput__hider' onClick={()=>setHidden(!hidden)} icon={hidden ? faEye : faEyeSlash}/>}
 			{errorText && <div className='TextInput__error'>{errorText}</div> }

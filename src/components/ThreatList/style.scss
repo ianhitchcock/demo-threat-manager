@@ -1,0 +1,20 @@
+@import 'common_styles/_variables';
+
+.ThreatList {
+    width: 100%;
+    
+    &--risk {
+        &--0 {
+            background-color: $threat-level-0;
+        }
+        &--1 {
+            background-color: $threat-level-1;
+        }
+        &--2 {
+            background-color: $threat-level-2;
+        }
+        &--3 {
+            background-color: $threat-level-3;
+        }
+    }
+}
