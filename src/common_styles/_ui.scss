@@ -1,0 +1,15 @@
+@import 'common_styles/_variables';
+
+@mixin container-border {
+    border: 1px solid $secondary-colour;
+}
+
+@mixin element-border {
+    border: 2px solid $primary-colour;
+    border-radius: 25% / 50%;
+}
+
+@mixin solid {
+    background-color: $primary-colour;
+    color: $accent-colour;
+}

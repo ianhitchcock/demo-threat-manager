@@ -1,0 +1,15 @@
+@import 'common_styles/_ui';
+@import 'common_styles/_typography';
+
+.Header {
+    @include solid;
+    @include container-border;
+
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    
+    &__title {
+        @include heading;
+    }
+}

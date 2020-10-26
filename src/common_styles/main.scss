@@ -1,4 +1,4 @@
-@import 'common_styles/_variables';
+@import 'common_styles/_typography';
 
 /* RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -50,6 +50,10 @@ table {
 }
 
 /* MAIN STYLES */
-body {
+html {
+    font-size: 62.5%;
+}
 
+body {
+    @include main-font;
 }
