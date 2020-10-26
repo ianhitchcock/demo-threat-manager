@@ -49,6 +49,10 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* MAIN STYLES */
 html {
     font-size: 62.5%;

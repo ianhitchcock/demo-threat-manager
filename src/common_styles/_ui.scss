@@ -1,12 +1,19 @@
 @import 'common_styles/_variables';
 
 @mixin container-border {
-    border: 1px solid $secondary-colour;
+    border: $container-border;
 }
 
 @mixin element-border {
     border: 2px solid $primary-colour;
-    border-radius: 25% / 50%;
+    border-radius: 10px / 50%;
+
+    padding: 3px 10px;
+}
+
+@mixin element-border-focused {
+    border: 2px solid $secondary-colour;
+    border-radius: 10px / 50%;
 }
 
 @mixin solid {

@@ -7,9 +7,12 @@
 
     display: flex;
     width: 100%;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: stretch;
     
     &__title {
         @include heading;
+        padding: 2rem;
     }
+
 }

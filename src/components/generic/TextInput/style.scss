@@ -1,0 +1,48 @@
+@import 'common_styles/_ui';
+@import 'common_styles/_typography';
+@import 'common_styles/_variables';
+
+.TextInput {
+
+    height: 51.5px;
+    position: relative;
+
+    &__label {
+        @include label;
+        padding: 0 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    
+    &__input {
+        @include element-border;
+        @include main-font;
+        margin-left: -10px;
+        flex: 100%;
+
+        &--error {
+            border-color: $error-colour;
+        }
+
+        &:focus {
+            @include element-border-focused;
+
+            outline: none;
+        }
+    }
+
+    &__hider {
+        position: absolute;
+        right: 18px;
+        top: 16.5px;
+    }
+
+    &__error {
+        width: 100%;
+        @include label;
+        color: $error-colour;
+        padding: 1px 10px;
+    }
+}
